@@ -6,8 +6,9 @@
   "license": "MIT",
   "description": "Slide show about me(@cowglow)",
   "scripts": {
-    "start": "gulp watch",
-    "build": "gulp"
+    "build": "gulp",
+    "serve": "npx live-server build --port=3000 --watch=./build --open=/",
+    "start": "gulp watch"
   },
   "dependencies": {},
   "devDependencies": {
