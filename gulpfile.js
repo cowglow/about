@@ -43,7 +43,7 @@ const js = () => {
 };
 
 const copy = () => {
-  return gulp.src("./src/assets/**/*").pipe(gulp.dest(dest + "/assets/"));
+  return gulp.src("./src/assets/**/*", { encoding: false }).pipe(gulp.dest(dest + "/assets/"));
 };
 
 exports.default = gulp.series(html, css, js, copy);
